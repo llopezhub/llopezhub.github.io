@@ -48,6 +48,11 @@ header nav a {
     padding: 6rem 0;
     background: #f9f9f9;
 }
+#hero img {
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
 #hero h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -57,11 +62,7 @@ header nav a {
     margin-bottom: 2rem;
     color: #555;
 }
-#hero img {
-    width: 200px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
+
 .btn {
     background: #111;
     color: #fff;
