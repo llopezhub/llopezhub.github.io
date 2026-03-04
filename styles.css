@@ -57,6 +57,11 @@ header nav a {
     margin-bottom: 2rem;
     color: #555;
 }
+.hero-image img {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
 .btn {
     background: #111;
     color: #fff;
