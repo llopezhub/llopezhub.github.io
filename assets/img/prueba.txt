@@ -1,1 +1,2 @@
-
+ruta 
+assets/img/prueba.txt
