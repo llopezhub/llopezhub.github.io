@@ -18,6 +18,13 @@ body {
     margin: auto;
     padding: 2rem 0;
 }
+.container-img-izq{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem 0;
+    display: flex;
+}
 
 /* Header */
 header {
@@ -74,6 +81,19 @@ header nav a {
 }
 .btn:hover {
     background: #555;
+}
+
+
+/* About me */
+
+#about {
+     background-image: url("../assets/img/fondo1.png");
+    background-size: cover;       /* que cubra toda la sección */
+    background-position: bottom;  /* centrado */
+    background-repeat: no-repeat;
+    padding: 4rem 0;
+    position: relative;           /* necesario para overlay si lo quieres */
+    color: white;     
 }
 
 /* Sections */
