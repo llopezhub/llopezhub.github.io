@@ -83,6 +83,32 @@ header nav a {
     background: #555;
 }
 
+/* Media query para móviles */
+@media (max-width: 768px) {
+  .hero-container h1 {
+    font-size: 2rem;
+  }
+
+  .hero-container p {
+    font-size: 1rem;
+  }
+
+  .hero-container .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Media query para móviles muy pequeños */
+@media (max-width: 480px) {
+  .hero-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-container p {
+    font-size: 0.9rem;
+  }
+}
 
 /* About me */
 
