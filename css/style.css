@@ -20,8 +20,8 @@ body {
     padding: 2rem 0;
 }
 .container-img-izq{
-    width: 90%;
-    max-width: 1100px;
+    width: 300px;
+    max-width: 300px;
     margin: auto;
     padding: 2rem 0;
     display: flex;
@@ -115,7 +115,7 @@ header nav a {
   }
 
   .imagen-lado-izq {
-    width: 200px;
+    width: 90%;
   }
 
   #hero h2 {
