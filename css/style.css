@@ -143,7 +143,7 @@ header .container {
 #about {
     background-image:
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url("../assets/img/fondo6.jpg");
+        url("../assets/img/fondo2.jpg");
     background-size: cover;       /* que cubra toda la sección */
     background-position: center;  /* centrado */
     background-repeat: no-repeat;
