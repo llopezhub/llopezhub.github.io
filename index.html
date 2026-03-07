@@ -22,17 +22,22 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
+<!-- Hero Section -->
+<section id="hero">
+    <div class="container hero-content">
+
         <div class="container-img-izq">
             <img src="assets/img/principal.jpg" alt="Laura López" class="imagen-lado-izq">
-        <div class="container">
-            <h2>Administrador de Sistemas | Profesional IT </h2>
+        </div>
+
+        <div class="container-txt-dch">
+            <h2>Administrador de Sistemas | Profesional IT</h2>
             <p>En constante aprendizaje, enfocado en la evolución y la innovación tecnológica</p>
             <a href="#projects" class="btn">Ver Proyectos</a>
-        </div container>
         </div>
-    </section>
+
+    </div>
+</section>
 
     <!-- About Section -->
     <section id="about">
@@ -46,19 +51,19 @@
     <section id="projects">
         <div class="container">
             <h2>Proyectos Destacados</h2>
-            <p>Estoy trabajando en esta sección para que puedas saber más de mí</p>
+            <p>Estoy trabajando en esta sección para que puedas saber más de mí, creemos uno juntos!</p>
         </div>
     </section>
 
-    <!-- Contact Section -->
- <section id="contact">
+     <!-- Contact Section -->
+<section id="contact">
   <div class="container">
     <h2>Contacto</h2>
-    <p>Si quieres trabajar conmigo o simplemente saludar, envíame un email. Te ayudo:</p>
+    <p>Si quieres trabajar conmigo o simplemente saludar, envíame un email, te ayudo a prepararlo:</p>
     <form id="contact-form">
       <input type="text" id="name" placeholder="Nombre" required>
       <input type="email" id="email" value="lvlpcs@hotmail.com" readonly>
-      <textarea id="message" placeholder="Mensaje" required></textarea>
+      <textarea id="message" placeholder="Escribe tu mensaje aquí" required></textarea>
       <button type="submit">Enviar</button>
     </form>
   </div>
@@ -70,17 +75,15 @@
     event.preventDefault();
 
     const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
+    const email = document.getElementById("email").value;
 
-    // Crea el enlace mailto con asunto y cuerpo
-    const mailtoLink = `mailto:lvlpcs@hotmail.com?subject=Contacto de ${encodeURIComponent(name)}&body=${encodeURIComponent("Correo: " + email + "\n\nMensaje: " + message)}`;
+    // Solo el nombre y el mensaje en el cuerpo, email no aparece
+    const mailtoLink = `mailto:${email}?subject=Contacto Web&body=${encodeURIComponent(name + "\n\n" + message)}`;
 
-    // Redirige al correo
     window.location.href = mailtoLink;
   });
 </script>
-
     <!-- Footer -->
     <footer>
         <div class="container">
