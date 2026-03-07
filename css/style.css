@@ -131,14 +131,17 @@ header nav a {
 /* About me */
 
 #about {
-    background-image: url("../assets/img/fondo1.png");
+    background-image:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("../assets/img/fondo6.jpg");
     background-size: cover;       /* que cubra toda la sección */
-    background-position: bottom;  /* centrado */
+    background-position: center;  /* centrado */
     background-repeat: no-repeat;
     padding: 4rem 0;
     position: relative;           /* necesario para overlay si lo quieres */
-    color: white;     
+    color: #ffffff;     
 }
+
 
 /* Sections */
 section {
