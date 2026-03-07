@@ -9,6 +9,7 @@ body {
     line-height: 1.6;
     color: #111;
     background: #fff;
+    text-align: center;
 }
 
 /* Contenedor general */
@@ -51,26 +52,44 @@ header nav a {
 
 /* Hero */
 #hero {
-    text-align: center;
     padding: 6rem 0;
     background: #f9f9f9;
 }
+
+#hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* Imagen */
 .imagen-lado-izq {
-    width: 250px;
+    flex: 1;
+    width: 300px;
     height: auto;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
 }
+
+/* Texto */
+.container-txt-dch {
+    max-width: 700px;
+}
+
 #hero h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
+
 #hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     color: #555;
 }
 
+/* Botón */
 .btn {
     background: #111;
     color: #fff;
@@ -79,41 +98,40 @@ header nav a {
     border-radius: 5px;
     transition: 0.3s;
 }
+
 .btn:hover {
     background: #555;
 }
 
-/* Media query para móviles */
+/* ================= */
+/* Responsive móvil */
+/* ================= */
+
 @media (max-width: 768px) {
-  .hero-container h1 {
-    font-size: 2rem;
+
+  #hero .container {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .hero-container p {
+  .imagen-lado-izq {
+    width: 200px;
+  }
+
+  #hero h2 {
+    font-size: 1.8rem;
+  }
+
+  #hero p {
     font-size: 1rem;
   }
 
-  .hero-container .btn {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-  }
-}
-
-/* Media query para móviles muy pequeños */
-@media (max-width: 480px) {
-  .hero-container h1 {
-    font-size: 1.5rem;
-  }
-
-  .hero-container p {
-    font-size: 0.9rem;
-  }
 }
 
 /* About me */
 
 #about {
-     background-image: url("../assets/img/fondo1.png");
+    background-image: url("../assets/img/fondo1.png");
     background-size: cover;       /* que cubra toda la sección */
     background-position: bottom;  /* centrado */
     background-repeat: no-repeat;
