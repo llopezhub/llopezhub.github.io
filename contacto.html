@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Profesional - Laura López</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+    
+        <div class="container">
+            <img src="assets/img/icon1.png" alt="Icono" class="logo">
+  
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="about.html">Perfil</a>
+                <a href="servicios.html">Tecnologías</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header> 
+
+    <!-- Contact Section -->
+<section id="contact">
+  <div class="container">
+    <h2>Contacto</h2>
+    <p>Si quieres trabajar conmigo o simplemente saludar, <br>
+        envíame un email, te ayudo a prepararlo:</p><br>
+    <form id="contact-form">
+      <input type="email" id="email" value="lvlpcs@hotmail.com" readonly>
+      <input type="text" id="name" placeholder="Nombre" required>
+      <textarea id="message" placeholder="Escribe tu mensaje aquí" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById("contact-form");
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const message = document.getElementById("message").value;
+    const email = document.getElementById("email").value;
+
+    // Solo el nombre y el mensaje en el cuerpo, email no aparece
+    const mailtoLink = `mailto:${email}?subject=Contacto Web&body=${encodeURIComponent(name + "\n\n" + message)}`;
+
+    window.location.href = mailtoLink;
+  });
+</script>
+
+
+</body>
+</html>
