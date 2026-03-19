@@ -76,6 +76,7 @@ text-shadow: 2px 1px 10px black;
 /* Para pantallas medianas (tabletas) */
 @media (max-width: 900px) {
     .about-banner {
+        background-position: center center;
         flex-direction: column;          /* apila imagen y texto verticalmente */
         justify-content: center;
         align-items: center;
@@ -96,6 +97,7 @@ text-shadow: 2px 1px 10px black;
 /* Para pantallas pequeñas (móviles) */
 @media (max-width: 500px) {
     .about-banner {
+        background-position: center center;
         min-height: 300px;               /* ajusta altura */
         padding: 20px 10px;
     }
