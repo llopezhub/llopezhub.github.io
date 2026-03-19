@@ -22,7 +22,7 @@
 
 .about-banner-text{
     max-width: 420px;
-    text-align: center;
+    text-align: justify;
     color: white;
     padding: 20px;
     border-radius: 10px;
@@ -56,7 +56,7 @@ text-shadow: 2px 1px 10px black;
 
 .about-text{
     max-width: 500px;
-    text-align: center;
+    text-align: justify;
 }
 
 .about-text p{
@@ -71,7 +71,7 @@ text-shadow: 2px 1px 10px black;
 }
 
  .about-extra{
-        text-align: center;
+        text-align: justify;
  }
                     /* Para pantallas medianas (tabletas) */
                     @media (max-width: 900px) {
@@ -80,7 +80,7 @@ text-shadow: 2px 1px 10px black;
                             flex-direction: column;          /* apila imagen y texto verticalmente */
                             justify-content: center;
                             align-items: center;
-                            text-align: center;
+                            text-align: justify;
                             padding: 30px 20px;
                         }
                     
@@ -132,7 +132,7 @@ text-shadow: 2px 1px 10px black;
                             flex-direction: column;   /* apila verticalmente */
                             align-items: center;
                             gap: 30px;                /* reduce espacio entre elementos */
-                            text-align: center;       /* centra texto */
+                            text-align: justify;       /* centra texto */
                         }
                     
                         .about-text {
