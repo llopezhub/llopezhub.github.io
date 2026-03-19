@@ -73,7 +73,41 @@ text-shadow: 2px 1px 10px black;
  .about-extra{
         text-align: left;
  }
+/* Para pantallas medianas (tabletas) */
+@media (max-width: 900px) {
+    .about-banner {
+        flex-direction: column;          /* apila imagen y texto verticalmente */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 30px 20px;
+    }
 
+    .about-banner-text {
+        margin: 0;                        /* elimina margen derecho */
+        max-width: 90%;
+    }
+
+    .about-banner {
+        background-position: center center; /* centra la imagen */
+    }
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 500px) {
+    .about-banner {
+        min-height: 300px;               /* ajusta altura */
+        padding: 20px 10px;
+    }
+
+    .about-banner-text h2 {
+        font-size: 1.5rem;               /* texto más pequeño */
+    }
+
+    .about-banner-text p {
+        font-size: 0.85rem;
+    }
+}
 /* About proyectos*/
 
 /* ===== GRID DE PROYECTOS ===== */
