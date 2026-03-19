@@ -76,7 +76,7 @@ text-shadow: 2px 1px 10px black;
 /* Para pantallas medianas (tabletas) */
 @media (max-width: 900px) {
     .about-banner {
-        background-position: right center;
+        background-position: right;
         flex-direction: column;          /* apila imagen y texto verticalmente */
         justify-content: center;
         align-items: center;
