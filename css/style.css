@@ -17,31 +17,38 @@ body {
     width: 90%;
     max-width: 1100px;
     margin: auto;
-    padding: 2rem 0;
 }
 .container-img-izq{
     width: 330px;
 }
 
 /* Hero */
+/* Hero */
 #hero {
-    padding: 6rem 0;
-    background: #f9f9f9;
+    width: 95%;
+    max-width: 1100px;
+    margin: 80px auto 40px;
+    border-radius: 12px; /* opcional para igualar estilo */
 }
 
+/* Contenedor interno */
 #hero .container {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* pegado arriba */
     justify-content: center;
     gap: 60px;
 }
 
 /* Imagen */
-.imagen-lado-izq{
+.container-img-izq {
+    width: 330px;
+}
+
+.imagen-lado-izq {
+    display: block;  /* 🔹 elimina el espacio invisible debajo */
     width: 100%;
     height: auto;
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 /* Texto */
 .container-txt-dch {
@@ -129,7 +136,6 @@ body {
 
 /* Sections */
 section {
-    padding: 4rem 0;
 }
 section h2 {
     text-align: center;

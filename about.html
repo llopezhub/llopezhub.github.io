@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Profesional - Laura López</title>
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/acordeon.css"
+
+    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
+
+    <!-- ================= HEADER ================= -->
     <header>
         <div class="container">
             <img src="assets/img/icon1.png" alt="Icono" class="logo">
@@ -23,105 +29,126 @@
                 <a href="contacto.html">Contacto</a>
             </nav>
         </div>
-    </header> 
+    </header>
 
+    <!-- ================= ABOUT BANNER ================= -->
     <section class="about-banner">
-
         <div class="about-banner-text">
-            <h2>Sobre mí</h2>
-          <h3><b>Me encanta el potencial que tiene el diseño y la tecnología para transformar ideas en experiencias.</b><br></h3>
-      
-            <br>
+            <h2>¡Hola!</h2>
+            <h3><b>Gracias por estar aquí, te cuento parte de mi historia... <br>Contacta conmigo y ¡acompañame en la siguiente!</b></h3>
         </div>
     </section>
-    
-        <!-- contenido INFORMATICA -->
-   <h2>Formación </h2>
-    <div class="container about-grid">
-            <div class="about-text">
-            <h3>ASIR</h3>
-            <p>Soy técnico profesional IT en constante aprendizaje, enfocada en la evolución y la innovación tecnológica 
-                para la optimización de soluciones digitales. Me encuentro en etapa de desarrollo profesional, ampliando conocimientos y 
-                adquiriendo experiencia práctica. He hecho parte de distintos proyectos en mi proceso de aprendizaje y hemos logrado reconocimientos geniales:
-            </p>
-            </div>
-            </div>
-    </div>
 
-            <!-- ventana flotante -->
-            <div id="modal" class="modal">
-                <div class="modal-content">
-                    <span id="cerrar">&times;</span>
-                    <h3 id="modal-titulo"></h3>
-                    <p id="modal-descripcion"></p>
-                    <p id="modal-tecnologias"></p>
-                </div>
-            </div>
+
+    <!-- ================= ABOUT DETALLE / ACORDEONES ================= -->
+<section class="about-accordion">
+
+  <!-- Bloque 1 -->
+  <div class="accordion-block">
+    <h3 class="accordion-title"><span class="arrow">&#9654;</span>
+        FORMACIÓN
+    </h3>
+    <div class="accordion-content">
+      <div class="accordion-inner">
+        <div class="accordion-text">
+          <p>Además del bachiller, cuento con un grado técnico superior en informática, fué una experiencia maravillosa comprender las redes, los diferentes sistemas,
+             softwares y servicios que se pueden ofrecer... en mi <a href="servicios.html">página de servicios</a> puedes encontrar distintos servicios que he ido aprendiendo 
+             y en los que te puedo ayudar. Continúo en constante aprendizaje, enfocada en la evolución y la innovación tecnológica para mejorar cada vez más.</p>
+        </div>
+        <div class="accordion-img">
+          <video src="assets/vd/asir.mp4" autoplay muted loop controls></video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bloque 2 -->
+  <div class="accordion-block">
+    <h3 class="accordion-title"><span class="arrow">&#9654;</span>
+        FORMACIÓN COMPLEMENTARIA
+    </h3>
+    <div class="accordion-content">
+      <div class="accordion-inner">
+        <div class="accordion-text">
+          <p>Hablo tres idiomas: Español, Inglés y Alemán. Los he aprendido de manera autodidacta, practicando por mi cuenta y poniéndolos en uso 
+            siempre que puedo, así que ya puedo mantener conversaciones fluidas en los tres. Me encanta seguir mejorando cada día, 
+            aprendiendo nuevas palabras, expresiones y formas de comunicarme, porque creo que los idiomas son una puerta para conocer culturas, 
+            personas y oportunidades.
+          </p>
+        </div>
+        <div class="accordion-img">
+          <video src="assets/vd/idiomas.mp4" autoplay muted loop controls></video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bloque 3 -->
+  <div class="accordion-block">
+    <h3 class="accordion-title"><span class="arrow">&#9654;</span>
+    FORMACIÓN ARTÍSTICA
+    </h3>
+    <div class="accordion-content">
+      <div class="accordion-inner">
+        <div class="accordion-text">
+          <p>Realicé un programa introductorio de diseño donde aprendí sobre creatividad y cómo comunicar ideas de manera efectiva. 
+            Además, exploré el dibujo y los conceptos fundamentales del arte, experimenté con la pintura y la composición del color... entre mucho más. 
+            El aprendizaje personal se volvió aún más enriquecedor al conocer otras mentes y perspectivas; escuchar y ver cómo cada persona expresaba su visión fue una experiencia preciosa que despertó en mí un amor aún más profundo por la creatividad y el arte.</p>
+        </div>
+        <div class="accordion-img">
+          <video src="assets/vd/artes.mp4" autoplay muted loop controls></video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Bloque 4 -->
+  <div class="accordion-block">
+    <h3 class="accordion-title"><span class="arrow">&#9654;</span>
+    OBJETIVO PROFESIONAL
+    </h3>
+    <div class="accordion-content">
+      <div class="accordion-inner">
+        <div class="accordion-text">
+          <p>Mi objetivo es seguir creciendo en el ámbito de la ciberseguridad y la administración de sistemas, 
+                participando en proyectos que permitan mejorar la seguridad y eficiencia de las infraestructuras tecnológicas. 
+                Me apasiona aprender constantemente y aplicar mis conocimientos de manera práctica, 
+                siempre aportando mi rayito de luz e ingenio en cada tarea. 
+                Espero poder ayudar a muchas personas a través de soluciones tecnológicas efectivas, 
+                mientras continúo desarrollando mis habilidades y explorando nuevas herramientas y metodologías. </p>
+        </div>
+        <div class="accordion-img">
+          <video src="assets/vd/objetivo.mp4" autoplay muted loop controls></video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+    <!-- ================= DESCRIPCIÓN PROFESIONAL ================= -->
+        <div class="container about-extra">
+            <h2>PROYECTOS FORMATIVOS</h2>
+            <p>
+            Me encanta el potencial que tienen el arte y la tecnología en transformar ideas en experiencias
+            </p>
+        </div>
+
+    <!-- ================= MODAL PROYECTOS ================= -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="cerrar">&times;</span>
+        <h3 id="modal-titulo"></h3>
+        <img id="modal-imagen" src="" alt="Imagen del proyecto" style="width:100%; max-height:300px; object-fit:cover; margin:15px 0; border-radius:12px;">
+        <p id="modal-descripcion"></p>
+        <p id="modal-tecnologias"></p>
+    </div>
+</div>
 <div id="proyectos" class="projects-grid"></div>
-            <h2>Formación complementaria</h2>
-    <div class="container about-grid">
-            <div class="about-text">
-            <h3>Hablo tres idiomas</h3>
-            <p>
-            • Español
-            • Inglés
-            • Alemán
-            </p>
-            <p>
-            Saber idiomas nos hace más flexibles y adaptables en un mundo globalizado. Hablo Español de forma nativa y tengo un nivel intermedio de alemán e inglés; aunque son bases, me permiten aprovechar diversas oportunidades en entornos multilingúes.
-            </p>
-            </div>
-            <div class="about-img-dch">
-            <img src="assets/img/idiomas.png" alt="Laura López trabajando en ciberseguridad">
-            </div>
-
-    </div>
-
-  <!-- contenido ARTE -->
-  <div class="container about-grid">
-            <div class="about-text">
-            <h2>Formación Artística</h2>
-            <h3></h3>
-            <p>
-            Realicé un <b>programa introductorio de diseño</b> donde aprendí sobre creatividad y cómo comunicar o abstraer ideas.
-            Fué una experiencia que me permitió mejorar en mis habilidades artísticas al saber entender e interpretar mejor. 
-            Esta experiencia fortaleció y despertó en mí el amor al arte.
-            Actualmente, me encanta la idea de integrar la creatividad con el desarrollo tecnológico; 
-            por eso, seguir mejorando en ambas disciplinas me entusiasma mucho.
-            </p>
-            </div>
-            <div class="about-img-dch">
-            <img src="assets/img/arte1.png" alt="Laura López trabajando en ciberseguridad">
-            </div>
-    </div>
-
-  <!-- contenido CURSO -->
-  <div class="container about-grid">
-            <div class="about-text">
-            <h2>Cursos</h2>
-            <h3></h3>
-            <p>
-            He realizado cursos <b>en Áreas emergentes como la ciberseguridad e inteligencia artificial. </b> <br>
-            Estos campos me parecen fascinantes y mi objetivo es integrar estos conocimientos para mejorar soluciones. 
-            A medida que la tecnología avanza, siento que es importante estar al día con las nuevas tendencias, 
-            comprendiendo su impacto en el mundo digital y las oportunidades que brindan. 
-            </p>
-            </div>
-            <div class="about-img-dch">
-            <img src="assets/img/curso1.png" alt="Laura López trabajando en ciberseguridad">
-            </div>
-    </div>
-    
-    <div class="container about-extra">
-            <h3>Objetivo profesional</h3>
-            <p>
-            Mi objetivo es seguir creciendo en el ámbito de la ciberseguridad y la
-            administración de sistemas, participando en proyectos que permitan
-            mejorar la seguridad y eficiencia de las infraestructuras tecnológicas.
-            </p>
-    </div>  <br>
-
-
+    <!-- JS -->
     <script src="js/proyectos.js"></script>
+    <script src="js/acordeon.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,198 @@
+
+.carousel{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 40px;
+    padding: 0 60px; /* espacio para los botones */
+}
+
+/* Contenedor relativo para posicionar botones */
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding: 0 60px;
+}
+
+/* Track de tarjetas */
+.carousel-track{
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+}
+
+/* Tarjetas */
+.services-card{
+    flex: 0 0 285px;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid #eee;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.services-card img{
+    width:250px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius:8px;
+}
+
+.services-card h3{
+    font-size: 1rem;
+    margin: 0.5rem 0 0;
+}
+
+.services-card p{
+    margin: 0 1rem 1rem;
+    color: #555;
+}
+
+.services-card:hover{
+    transform: translateY(-5px);
+}
+
+/* Botones del carrusel */
+.carousel-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #4f52b3;
+    color: white;
+    border: none;
+    font-size: 26px;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    z-index: 10;
+}
+
+.carousel-btn:hover{
+    background: #262186;
+}
+
+.prev{
+    left: 0;
+}
+
+.next{
+    right: 0;
+}
+
+.services-ver {
+    display: block;
+    text-align: right;
+}
+
+/* Projects Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 1024px) {
+
+  .carousel-wrapper {
+    padding: 0 40px;
+  }
+
+  .services-card {
+    flex: 0 0 180px;
+    padding: 12px;
+  }
+
+  .services-card img {
+    width: 70px;
+  }
+
+  .services-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .carousel-btn {
+    font-size: 22px;
+    padding: 8px 12px;
+  }
+
+  .prev {
+    left: -10px;
+  }
+
+  .next {
+    right: -10px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .carousel-wrapper {
+    padding: 0 20px;
+  }
+
+  .services-card {
+    flex: 0 0 150px;
+    padding: 10px;
+  }
+
+  .services-card img {
+    width: 60px;
+  }
+
+  .services-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .carousel-btn {
+    font-size: 20px;
+    padding: 6px 10px;
+  }
+
+  .prev {
+    left: -5px;
+  }
+
+  .next {
+    right: -5px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .carousel-wrapper {
+    padding: 0 10px;
+  }
+
+  .services-card {
+    flex: 0 0 120px;
+    padding: 8px;
+  }
+
+  .services-card img {
+    width: 50px;
+  }
+
+  .services-card h3 {
+    font-size: 0.85rem;
+  }
+
+  .carousel-btn {
+    font-size: 18px;
+    padding: 5px 8px;
+  }
+
+  .prev {
+    left: -5px;
+  }
+
+  .next {
+    right: -5px;
+  }
+}

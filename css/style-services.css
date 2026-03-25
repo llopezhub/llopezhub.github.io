@@ -49,6 +49,11 @@
 .services-card p{
     margin: 0 1rem 1rem;
     color: #555;
+    line-height: 1.4;      /* evita espacios raros al final */
+        max-width: 220px;
+    margin: 0 auto 1rem;
+    text-align: center;
+    line-height: 1.5;
 }
 
 .services-card:hover{

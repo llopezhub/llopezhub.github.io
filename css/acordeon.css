@@ -1,0 +1,113 @@
+/* ================== ACORDEÓN ================== */
+.about-accordion {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 0px;    /* Espacio interno opcional para que no toque los bordes */
+
+}
+
+.accordion-block {
+  margin-bottom: 15px;
+}
+
+/* ===== TÍTULO DEL ACORDEÓN ===== */
+.accordion-title {
+  cursor: pointer;
+  padding: 12px 20px;
+  background: none;
+  color: rgba(0, 0, 0, 0.732);
+  border-radius: 8px;
+  font-size: 1.2rem;
+  transition: background 0.3s;
+
+  display: flex;        /* flecha y texto en línea */
+  align-items: center;
+  gap: 10px;            /* espacio entre flecha y texto */
+}
+
+.accordion-title:hover {
+  color:rgba(98, 98, 149, 0.732) ;
+}
+
+/* Flecha al inicio */
+.accordion-title .arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  font-size: 1rem;
+  transform: rotate(0deg);      /* apunta a la derecha cuando está cerrado */
+}
+
+/* Giro de flecha cuando el bloque está activo */
+.accordion-title.active .arrow {
+  transform: rotate(90deg);     /* apunta hacia abajo */
+}
+
+/* ===== CONTENIDO DEL ACORDEÓN ===== */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  background: #f1f1f1;
+  border-radius: 0 0 8px 8px;
+  padding: 0 20px;
+}
+
+.accordion-content.active {
+  max-height: 800px;
+  padding: 12px 20px;
+}
+
+/* Contenedor interno: texto + imagen en línea */
+.accordion-inner {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+/* Texto del bloque */
+.accordion-text {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Imagen del bloque */
+.accordion-img img {
+  width: 400px;
+  max-width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Responsive: en móvil se apila vertical */
+@media (max-width: 768px) {
+  .accordion-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .accordion-img img {
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+.accordion-img video {
+    width: 400px;          /* igual que tus imágenes */
+    height: 250px;         /* altura uniforme */
+    object-fit: cover;     /* recorta sin deformar */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Responsive: en móvil se adapta al ancho */
+@media (max-width: 768px) {
+    .accordion-img video {
+        width: 90%;
+        height: auto;
+    }
+}

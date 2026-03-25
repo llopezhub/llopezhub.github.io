@@ -1,302 +1,269 @@
+/* ================= RESET Y FUENTES ================= */
 
-.about-banner{
-    position: relative;
-    background-image: url("../assets/img/about4.png");
-    background-size: cover;        /* se ajusta la imagen sin recortarla */
-    background-position: left center;
-    background-repeat: no-repeat;
-
-    min-height: 400px;               /* altura fija y más razonable */
-    width: 90%;                       /* deja márgenes laterales */
-    max-width: 1100px;                /* no se haga gigante en pantallas grandes */
-    margin: 80px auto 40px;           /* espacio arriba y abajo */
-    
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-    padding: 20px;                     /* espacio interior */
-    border-radius: 12px;               /* bordes suaves */
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* sombra para destacarla */
+/* Resetea márgenes y paddings de todos los elementos y activa box-sizing border-box */
+* {
+    margin: 0;              /* Elimina margen por defecto */
+    padding: 0;             /* Elimina padding por defecto */
+    box-sizing: border-box; /* Padding y border no aumentan el ancho total */
 }
 
-.about-banner-text{
-    max-width: 420px;
-    text-align: justify;
-    color: white;
+/* Estilos generales del body */
+body {
+    font-family: 'Inter', sans-serif; /* Fuente principal */
+    color: #111;                      /* Color de texto principal */
+    background: #fff;                 /* Fondo blanco */
+    text-align: center;               /* Centra texto por defecto */
+    line-height: 1.6;                 /* Altura de línea legible */
+}
+
+/* ================= ABOUT BANNER ================= */
+
+/* Contenedor principal del banner de "Sobre mí" */
+.about-banner {
+    position: relative;                       /* Permite posicionar elementos internos */
+    background-image: url("../assets/img/about4.png"); /* Imagen de fondo */
+    background-size: cover;                   /* La imagen cubre todo el contenedor */
+    background-position: right center;        /* Imagen alineada a la derecha y centrada verticalmente */
+    background-repeat: no-repeat;             /* Evita que la imagen se repita */
+
+    min-height: 400px;                        /* Altura mínima del banner */
+    width: 90%;                               /* Ocupa el 90% del ancho de la pantalla */
+    max-width: 1100px;                        /* Limita tamaño máximo en pantallas grandes */
+    margin: 80px auto 40px;                   /* Centra horizontalmente y agrega margen arriba/abajo */
+
+    display: flex;                            /* Activa flexbox para alinear contenido */
+    align-items: center;                      /* Centra contenido verticalmente */
+    justify-content: flex-end;                /* Coloca el texto hacia la derecha */
+
+    padding: 20px;                            /* Espacio interior */
+    border-radius: 12px;                      /* Bordes redondeados */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.871); /* Sombra para dar profundidad */
+}
+
+/* Contenedor de texto dentro del banner */
+.about-banner-text {
+    max-width: 70%;                    /* Limita el ancho del texto */
+    color: rgb(255, 255, 255);                      /* Color del texto */
     padding: 20px;
-    border-radius: 10px;
-    margin-right: 20%;                /* separa del borde derecho */
-text-shadow: 2px 1px 10px black;
-
+    padding-left: 20%;                     /* Espacio interno */
+    border-radius: 10px;               /* Bordes redondeados del cuadro de texto */
+    margin-right: 20%;                  /* Separa el texto del borde derecho */
 }
 
-.about-banner-text h2{
-    text-shadow: 2px 1px 7px rgb(73, 76, 96);
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+/* Estilo del título dentro del banner */
+.about-banner-text h2 {
+    font-size: 1.8rem;                       /* Tamaño de fuente grande para título */
+    margin-bottom: 10px;                     /* Espacio debajo del título */
+    text-shadow: 2px 1px 7px rgba(5, 5, 5, 0.979); /* Sombra adicional para resaltar */
 }
 
-.about-banner-text p{
-    font-size: 0.95rem;
+/* Estilo del subtítulo o párrafos grandes */
+.about-banner-text h3 {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* sombra negra semitransparente */
 }
 
-/* About detalle con imagen */
+/* ================= TEXTOS JUSTIFICADOS ================= */
 
-#about-detalle{
+/* Aplica justificación a párrafos en banner, about y proyectos */
+.about-banner-text p,
+.about-text p,
+.project-content p {
+    text-align: justify;      /* Texto alineado a ambos lados */
+    text-align-last: left;    /* Última línea alineada a la izquierda */
+}
+
+/* ================= SECCIÓN ABOUT ================= */
+
+/* Contenedor detalle sobre mí */
+#about-detalle {
+    background: #fff; /* Fondo blanco para secciones */
+}
+
+/* Grid para texto e imagen */
+.about-grid {
+    display: flex;                 /* Flexbox en fila */
+    align-items: center;           /* Centra verticalmente */
+    justify-content: center;       /* Centra horizontalmente */
+    gap: 60px;                     /* Espacio entre elementos */
+    margin-bottom: 40px;           /* Espacio inferior */
+}
+
+/* Contenedor de texto */
+.about-text {
+    max-width: 500px; /* Limita ancho de texto para mejor lectura */
+}
+
+/* Estilo de los párrafos */
+.about-text p {
+    margin-bottom: 15px; /* Espacio entre párrafos */
+    color: #444;         /* Color gris suave */
+}
+
+/* Estilo de imagen a la derecha */
+.about-img-dch img {
+    width: 320px;                             /* Ancho fijo de imagen */
+    border-radius: 15px;                      /* Bordes redondeados */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* Sombra */
+}
+
+/* Sección de contenido extra */
+.about-extra {
+    text-align: left;       /* Alinea a la izquierda */
+    margin-bottom: 40px;    /* Margen inferior */
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Ajustes para pantallas medianas (<900px) */
+@media (max-width: 900px) {
+    .about-banner {
+        flex-direction: column;          /* Coloca texto debajo de la imagen */
+        justify-content: center;         /* Centra verticalmente */
+        align-items: center;             /* Centra horizontalmente */
+        padding: 30px 20px;              /* Ajusta padding */
+    }
+    .about-banner-text {
+        margin: 0;                       /* Elimina margen lateral */
+        max-width: 90%;                   /* Texto más ancho en pantallas pequeñas */
+    }
+    .about-grid {
+        flex-direction: column;           /* Apila imagen y texto verticalmente */
+        align-items: center;
+        gap: 30px;                        /* Menos separación */
+        text-align: center;               /* Centra texto */
+    }
+    .about-text {
+        max-width: 80%;
+    }
+    .about-img-dch img {
+        width: 80%;
+        max-width: 320px;
+    }
+}
+
+/* Ajustes para pantallas pequeñas (<500px) */
+@media (max-width: 500px) {
+    .about-banner {
+        min-height: 300px;     /* Reduce altura */
+        padding: 20px 10px;    /* Reduce padding */
+    }
+    .about-banner-text h2 {
+        font-size: 1.5rem;     /* Título más pequeño */
+    }
+    .about-banner-text p {
+        font-size: 0.85rem;    /* Texto más compacto */
+    }
+    .about-text {
+        max-width: 90%;        /* Ancho cómodo */
+        margin: 0 auto;        /* Centra bloque */
+        font-size: 0.9rem;     /* Ajuste fuente */
+    }
+    .about-img-dch img {
+        width: 90%;            /* Imagen adaptable */
+    }
+}
+
+/* ================= PROYECTOS ================= */
+
+/* Grid para los proyectos */
+.projects-grid {
+    width: 90%;
+    max-width: 1100px;
+    margin: 3% auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); /* Ajusta columnas automáticamente */
+    gap: 30px;
+}
+
+/* Tarjeta individual de proyecto */
+.project-card {
     background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.about-grid{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
+/* Efecto hover de la tarjeta */
+.project-card:hover {
+    transform: translateY(-6px);           /* Se eleva ligeramente */
+    box-shadow: 0 18px 35px rgba(0,0,0,0.18); /* Sombra más marcada */
 }
 
-.about-text{
-    max-width: 500px;
-    text-align: justify;
+/* Imagen del proyecto */
+.project-img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover; /* Recorta imagen sin deformar */
 }
 
-.about-text p{
-    margin-bottom: 15px;
+/* Contenido dentro de la tarjeta */
+.project-content {
+    padding: 18px;
+}
+
+.project-content h4 {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.project-content p {
+    font-size: 0.9rem;
     color: #444;
 }
 
-.about-img-dch img{
-    width: 320px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+/* Botón del proyecto */
+.project-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 7px 14px;
+    background: #2c3e7a;
+    color: white;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.2s;
 }
 
- .about-extra{
-        text-align: justify;
- }
-                    /* Para pantallas medianas (tabletas) */
-                    @media (max-width: 900px) {
-                        .about-banner {
-                            background-position: center center;
-                            flex-direction: column;          /* apila imagen y texto verticalmente */
-                            justify-content: center;
-                            align-items: center;
-                            text-align: justify;
-                            padding: 30px 20px;
-                        }
-                    
-                        .about-banner-text {
-                            margin: 0;                        /* elimina margen derecho */
-                            max-width: 90%;
-                        }
-                    
-                        .about-banner {
-                            background-position: right center; /* centra la imagen */
-                        }
-                    }
-                    
-                    /* Para pantallas pequeñas (móviles) */
-                    @media (max-width: 500px) {
-                        .about-banner {
-                            background-position: center center;
-                            min-height: 300px;               /* ajusta altura */
-                            padding: 20px 10px;
-                        }
-                    
-                        .about-banner-text h2 {
-                            font-size: 1.5rem;               /* texto más pequeño */
-                        }
-                    
-                        .about-banner-text p {
-                            font-size: 0.85rem;
-                        }
-                    }
-/* About proyectos*/
-
-/* ===== GRID DE PROYECTOS ===== */
-
-.projects-grid{
-    width:90%;             /* deja márgenes a los lados */
-    margin-top:40px;
-    margin:3% auto;      /* centra el grid */
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
-    gap:30px;
-    max-width:1100px;      /* igual que tu about-banner */
+.project-btn:hover {
+    background: #1d295546;
 }
 
-                    /* Responsive para About Grid */
-                    
-                    /* Para pantallas medianas (tabletas) */
-                    @media (max-width: 900px) {
-                        .about-grid {
-                            flex-direction: column;   /* apila verticalmente */
-                            align-items: center;
-                            gap: 30px;                /* reduce espacio entre elementos */
-                            text-align: justify;       /* centra texto */
-                        }
-                    
-                        .about-text {
-                            max-width: 80%;           /* columna más estrecha pero legible */
-                        }
-                    
-                        .about-img-dch img {
-                            width: 80%;               /* imagen más pequeña y centrada */
-                            max-width: 320px;         /* limita tamaño máximo */
-                        }
-                    }
-                    
-                    /* Para pantallas pequeñas (móviles) */
-                    @media (max-width: 500px) {
-                        .about-text {
-                            max-width: 90%;
-                            margin: 0 auto;
-                            font-size: 0.9rem;        /* reduce tamaño de texto si quieres */
-                        }
-                    
-                        .about-img-dch img {
-                            width: 90%;               /* ocupa más ancho en móvil */
-                        }
-                    }
-/* ===== TARJETAS ===== */
+/* ================= MODAL ================= */
 
-.project-card{
-
-    background:#fff;
-    border-radius:12px;
-    overflow:hidden;
-
-    box-shadow:0 10px 25px rgba(0,0,0,0.12);
-
-    transition:transform 0.25s ease, box-shadow 0.25s ease;
-
+/* Contenedor del modal */
+.modal {
+    display: none;                       /* Oculto por defecto */
+    position: fixed;                     /* Posición fija */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);       /* Fondo semi-transparente */
+    justify-content: center;             /* Centra contenido horizontal */
+    align-items: center;                 /* Centra contenido vertical */
+    z-index: 9999;                       /* Siempre encima de todo */
 }
 
-
-/* efecto hover suave */
-
-.project-card:hover{
-
-    transform:translateY(-6px);
-
-    box-shadow:0 18px 35px rgba(0,0,0,0.18);
-
+/* Contenido del modal */
+.modal-content {
+    background: #fff;
+    max-width: 73%;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    flex-direction: row;     /* fila horizontal */
+    gap: 30px;
 }
 
-
-/* ===== IMAGEN ===== */
-
-.project-img{
-
-    width:100%;
-    height:170px;
-
-    object-fit:cover;
-
+.modal-content img {
+    width: 50%;              /* mitad del modal */
 }
 
-
-/* ===== CONTENIDO TARJETA ===== */
-
-.project-content{
-
-    padding:18px;
-
+/* Botón cerrar modal */
+#cerrar {
+    float: right;    /* Posición derecha */
+    font-size: 24px; /* Tamaño grande */
+    cursor: pointer; /* Cambia cursor al pasar sobre él */
 }
 
-
-.project-content h4{
-
-    margin-bottom:8px;
-    font-size:1.1rem;
-
-}
-
-
-.project-content p{
-
-    font-size:0.9rem;
-    color:#444;
-
-}
-
-
-/* ===== BOTÓN ===== */
-
-.project-btn{
-
-    display:inline-block;
-
-    margin-top:12px;
-
-    padding:7px 14px;
-
-    background:#2c3e7a; /* azul elegante */
-
-    color:white;
-
-    border-radius:6px;
-
-    font-size:0.85rem;
-
-    cursor:pointer;
-
-    transition:background 0.2s;
-
-}
-
-
-.project-btn:hover{
-
-    background:#1d2955;
-
-}
-
-
-/* ===== MODAL ===== */
-
-.modal{
-
-    display:none;
-
-    position:fixed;
-
-    top:0;
-    left:0;
-
-    width:100%;
-    height:100%;
-
-    background:rgba(0,0,0,0.55);
-
-    justify-content:center;
-    align-items:center;
-
-    z-index:9999;   /* 👈 esto lo coloca por encima de todo */
-
-}
-
-
-.modal-content{
-
-    background:#fff;
-
-    max-width:520px;
-
-    padding:30px;
-
-    border-radius:12px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,0.25);
-
-}
-
-
-#cerrar{
-
-    float:right;
-
-    font-size:24px;
-
-    cursor:pointer;
-
-}
