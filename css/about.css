@@ -123,6 +123,7 @@ body {
         padding: 30px 20px;              /* Ajusta padding */
     }
     .about-banner-text {
+        text-align: center; /* centra el texto en móviles */
         margin: 0;                       /* Elimina margen lateral */
         max-width: 90%;                   /* Texto más ancho en pantallas pequeñas */
     }
@@ -162,7 +163,13 @@ body {
         width: 90%;            /* Imagen adaptable */
     }
 }
-
+@media (max-width: 768px) {
+    .about-banner-text {
+        text-align: center; /* centra el texto en móviles */
+        padding-left: 0;    /* quita padding izquierdo que lo empuja a la derecha */
+        margin-right: 0;    /* quita margen derecho */
+    }
+}
 /* ================= PROYECTOS ================= */
 
 /* Grid para los proyectos */
