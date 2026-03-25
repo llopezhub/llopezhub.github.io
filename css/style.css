@@ -91,11 +91,16 @@ body {
 
   #hero .container {
     flex-direction: column;
+    align-items: center;  /* centramos todo */
     text-align: center;
+    gap: 20px; 
   }
 
   .imagen-lado-izq {
-    width: 200px;
+     width: 100%;          /* ocupa 70% del ancho del contenedor */
+    align-items: center;
+    max-width: 300px;     /* no se haga gigante en tablet grande */
+    height: auto;
   }
 
   #hero h2 {
