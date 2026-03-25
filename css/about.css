@@ -109,7 +109,7 @@ body {
 /* Sección de contenido extra */
 .about-extra {
     text-align: left;       /* Alinea a la izquierda */
-    margin-bottom: 40px;    /* Margen inferior */
+    margin-top: 80px;  /* ajusta el valor a lo que necesites */
 }
 
 /* ================= RESPONSIVE ================= */
